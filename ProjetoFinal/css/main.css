@@ -1,0 +1,88 @@
+body {
+  background: url('../img/main_background.PNG') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0;
+  padding: 20px;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 50px;
+  width: auto;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-button {
+  width: 100%;
+  max-width: 250px;
+  height: 70px;
+  border: 2px solid white;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: transparent;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 1px 1px 4px black;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  margin: 5px 0;
+}
+
+.main-button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-areas:
+      ". nova ."
+      "minhas . surpreenda";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 50px;
+  }
+  
+  #btnNova {
+    grid-area: nova;
+  }
+  
+  #btnMinhas {
+    grid-area: minhas;
+  }
+  
+  #btnSurpreenda {
+    grid-area: surpreenda;
+  }
+  
+  .logo {
+    height: 60px;
+  }
+  
+  .main-button {
+    font-size: 1.3rem;
+  }
+}
