@@ -1,0 +1,85 @@
+body {
+  background: url('../img/novaLembra_background.PNG') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 15px;
+}
+
+.container {
+  padding: 15px;
+}
+
+input, textarea, .list-group-item {
+  color: #000;
+  width: 100%;
+}
+
+.poster {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.btn-outline-light, .btn-outline-success {
+  border-radius: 8px;
+  padding: 6px 15px;
+  font-weight: bold;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.list-group-item:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+  min-height: 150px;
+}
+
+input[type=range] {
+  accent-color: #28a745;
+  width: 100%;
+}
+
+#results {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-4 {
+    width: 40%;
+  }
+  
+  .col-md-8 {
+    width: 60%;
+    padding-left: 20px;
+  }
+  
+  .btn-outline-light, .btn-outline-success {
+    width: auto;
+    margin: 0 5px;
+  }
+  
+  .poster {
+    margin-bottom: 0;
+  }
+}
